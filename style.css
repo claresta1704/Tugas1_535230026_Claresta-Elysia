@@ -1,10 +1,139 @@
-h1{
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=New+Amsterdam&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif;
+}
+
+body{
+    background: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 100vh;
 }
 
-img{
-    float: right
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left-side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2{
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-family: 'Baskervville SC', sans-serif;
+    font-size: 50%;
+    font-weight: 300;
+}
+
+.contactInfo{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+    font-size: 75%;
+}
+
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h4{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactInfo.education h5{
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.experience li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.experience h4{
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactInfo.experience h4 span{
+    color: #59c5f7;
+    font-weight: 300;
+}
+
+.contactInfo.experience h5{
+    color: #fff;
+    font-weight: 500;
+}
+
+.container .right-side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
 }
