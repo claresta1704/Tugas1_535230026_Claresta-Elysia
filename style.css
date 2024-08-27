@@ -159,6 +159,10 @@ body{
     margin-bottom: 5px;
 }
 
+.skills li .text{
+    font-size: 90%;
+}
+
 .skills .percent div{
     position: absolute;
     top: 0;
@@ -244,9 +248,12 @@ body{
 
 .SOFTSKILL ul li{
     color: #333;
-    font-weight: 500;
     margin: 10px 0;
     list-style:disc;
+}
+
+.SOFTSKILL li {
+    font-size: 90%;
 }
 
 @Media (max-width: 1000px){
