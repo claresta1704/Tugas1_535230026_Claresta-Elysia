@@ -11,7 +11,7 @@
 }
 
 body{
-    background: lightblue;
+    background: rgb(248, 188, 240);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ body{
 
 .container .left-side{
     position: relative;
-    background: #003147;
+    background: #3b0047;
     padding: 40px;
 }
 
@@ -50,6 +50,7 @@ body{
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    border: 3px solid #e5a9f8;
 }
 
 .profileText .imgBx img{
@@ -103,7 +104,7 @@ body{
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #03a9f4;
+    color: #d87ef4;
 }
 
 .contactInfo ul li span{
@@ -117,7 +118,7 @@ body{
 }
 
 .contactInfo.education h4{
-    color: #03a9f4;
+    color: #d87ef4;
     font-weight: 500;
 }
 
@@ -137,7 +138,7 @@ body{
 }
 
 .title2{
-    color: #003147;
+    color: #3b0047;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -168,7 +169,7 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: #d87ef4;
 }
 
 .skills .box{
@@ -190,7 +191,7 @@ body{
 .skills .box .text h4{
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    color: #2a7da2;
+    color: #d35dc1;
     font-size: 20px;
     font-weight: 600;
 }
@@ -234,7 +235,7 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: #d87ef4;
 }
 
 .SOFTSKILL{
