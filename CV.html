@@ -6,6 +6,17 @@
     <title>Tugas1_535230026_Claresta Elysia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
+    <!-- JAVASCRIPT -->
+     <script>
+        function showLink(id) {
+            document.getElementById(id).style.visibility = "visible";
+        }
+
+        function hideLink(id) {
+            document.getElementById(id).style.visibility = "hidden";
+        }
+     </script>
 </head>
 <body>
     <div class="container">
@@ -52,15 +63,24 @@
                 <h2 class="title">Education</h5>
                 <ul>
                     <li>
-                        <h4>SMPK Saint John HI</h4>
+                        <h4 onmouseover="showLink('linkSMP')" onmouseout="hideLink('linkSMP')">
+                            <a href="https://maps.app.goo.gl/xHrCtWb7mtLfEp4B8" target="_blank">SMPK Saint John HI</a>
+                            <span id="linkSMP">Go To Google Maps</span>
+                        </h4>
                         <h5>2017-2020</h5>
                     </li>
                     <li>
-                        <h4>SMA Negeri 2 Jakarta</h4>
+                        <h4 onmouseover="showLink('linkSMA')" onmouseout="hideLink('linkSMA')">
+                            <a href="https://maps.app.goo.gl/cNBEfvu5upXpvP2k7" target="_blank">SMAN 2 Jakarta</a>
+                            <span id="linkSMA">Go To Google Maps</span>
+                        </h4>
                         <h5>2020-2023</h5>
                     </li>
                     <li>
-                        <h4>Universitas Tarumanagara</h4>
+                        <h4 onmouseover="showLink('linkKuliah')" onmouseout="hideLink('linkKuliah')">
+                            <a href="https://maps.app.goo.gl/ofPHxyPYjTSdcwaZ6" target="_blank">Universitas Tarumanagara</a>
+                            <span id="linkKuliah">Go To Google Maps</span>
+                        </h4>
                         <h5>2023-Present</h5>
                     </li>
                 </ul>

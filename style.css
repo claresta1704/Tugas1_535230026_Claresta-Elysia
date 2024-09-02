@@ -114,12 +114,29 @@ body{
 }
 
 .contactInfo.education li{
+    position: relative;
     margin-bottom: 15px;
 }
 
-.contactInfo.education h4{
+.contactInfo.education li span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    visibility: hidden;
+    position: absolute;
+    background-color: #d87ef4;
+    border-radius: 8px;
+    padding: 5px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    transform: translateX(10px);
+    color:#000;
+}
+
+.contactInfo.education h4 a{
     color: #d87ef4;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .contactInfo.education h5{
